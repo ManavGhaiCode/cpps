@@ -49,6 +49,14 @@ namespace Math {
     template<typename T> double percent(T mainNumder, T percent) {
         return mainNumder * (percent / 100);
     }
+
+    template<typename T> double factorial(T numTofactorial) {
+        if (numTofactorial == 1) {
+            return 1;
+        }
+
+        return numTofactorial * factorial(numTofactorial - 1);
+    }
 }
 
 #endif
