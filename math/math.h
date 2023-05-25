@@ -45,6 +45,10 @@ namespace Math {
     template<typename T> T cube(T num) {
         return num * num * num;
     }
+
+    template<typename T> double percent(T mainNumder, T percent) {
+        return mainNumder * (percent / 100);
+    }
 }
 
 #endif
