@@ -37,6 +37,14 @@ namespace Math {
             return numToTax - (numToTax * (30 / 100));
         }
     }
+
+    template<typename T> T square(T num) {
+        return num * num;
+    }
+
+    template<typename T> T cube(T num) {
+        return num * num * num;
+    }
 }
 
 #endif
