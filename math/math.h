@@ -85,6 +85,12 @@ namespace Math {
 
         virtual void run() = 0; 
     };
+
+    class notGate : SimpleGate {
+        void run() override {
+            output = !input;
+        }
+    };
 }
 
 #endif
