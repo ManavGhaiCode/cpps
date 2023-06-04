@@ -57,6 +57,20 @@ namespace Math {
 
         return numTofactorial * factorial(numTofactorial - 1);
     }
+
+    struct SimpleGate {
+        bool input;
+        bool output;
+
+        virtual void run() = 0;
+    };
+
+    struct Gate {
+        bool input[2];
+        bool output;
+
+        virtual void run() = 0;
+    };   
 }
 
 #endif
