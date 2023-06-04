@@ -70,7 +70,14 @@ namespace Math {
         bool output;
 
         virtual void run() = 0;
-    };   
+    };
+
+    struct CustomGate {
+        std::vector<bool> input;
+        std::vector<bool> output;
+
+        virtual void run() = 0; 
+    };
 }
 
 #endif
