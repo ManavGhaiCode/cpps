@@ -91,6 +91,12 @@ namespace Math {
             output = !input;
         }
     };
+
+    class andGate : Gate {
+        void run() override {
+            output = input[0] && input[1];
+        }
+    };
 }
 
 #endif
