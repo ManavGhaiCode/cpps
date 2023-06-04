@@ -72,6 +72,13 @@ namespace Math {
         virtual void run() = 0;
     };
 
+    struct DoubleGate {
+        bool input[2];
+        bool output[2];
+
+        virtual void run() = 0;
+    };
+
     struct CustomGate {
         std::vector<bool> input;
         std::vector<bool> output;
