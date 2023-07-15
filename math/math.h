@@ -65,37 +65,42 @@ namespace Math {
         virtual void run() = 0;
     };
 
-    struct Gate {
-        bool input[2];
-        bool output;
+    class Gate {
+        public:
+            bool input[2];
+            bool output;
 
-        virtual void run() = 0;
+            virtual void run() = 0;
     };
 
-    struct DoubleGate {
-        bool input[2];
-        bool output[2];
+    class DoubleGate {
+        public:
+            bool input[2];
+            bool output[2];
 
-        virtual void run() = 0;
+            virtual void run() = 0;
     };
 
-    struct CustomGate {
-        std::vector<bool> input;
-        std::vector<bool> output;
+    class CustomGate {
+        public:
+            std::vector<bool> input;
+            std::vector<bool> output;
 
-        virtual void run() = 0; 
+            virtual void run() = 0; 
     };
 
-    class notGate : SimpleGate {
-        void run() override {
-            output = !input;
-        }
+    class notGate : public SimpleGate {
+        public:
+            void run() override {
+                output = !input;
+            }
     };
 
-    class andGate : Gate {
-        void run() override {
-            output = input[0] && input[1];
-        }
+    class andGate : public Gate {
+        public:
+            void run() override {
+                output = input[0] && input[1];
+            }
     };
 }
 
