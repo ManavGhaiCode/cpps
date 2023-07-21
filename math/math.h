@@ -27,6 +27,17 @@ namespace Math {
         float z = 0.00;
     };
 
+    struct Vector2Int {
+        int x = 0.00;
+        int y = 0.00;
+    };
+
+    struct Vector3Int {
+        int x = 0.00;
+        int y = 0.00;
+        int z = 0.00;
+    };
+
     template<typename T> T floor(T num) {
         return std::floor(num);
     }
