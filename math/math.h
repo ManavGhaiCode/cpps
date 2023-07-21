@@ -9,6 +9,12 @@ namespace Math {
         double x = 0.00;
         double y = 0.00;
     };
+
+    struct Vector2 {
+        double x = 0.00;
+        double y = 0.00;
+        double z = 0.00;
+    };
     
 
     template<typename T> T floor(T num) {
