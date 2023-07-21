@@ -17,25 +17,25 @@ namespace Math {
     };
     
     struct Vector2Float {
-        float x = 0.00;
-        float y = 0.00;
+        float x = 0.00f;
+        float y = 0.00f;
     };
 
     struct Vector3Float {
-        float x = 0.00;
-        float y = 0.00;
-        float z = 0.00;
+        float x = 0.00f;
+        float y = 0.00f;
+        float z = 0.00f;
     };
 
     struct Vector2Int {
-        int x = 0.00;
-        int y = 0.00;
+        int x = 0;
+        int y = 0;
     };
 
     struct Vector3Int {
-        int x = 0.00;
-        int y = 0.00;
-        int z = 0.00;
+        int x = 0;
+        int y = 0;
+        int z = 0;
     };
 
     template<typename T> T floor(T num) {
