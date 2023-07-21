@@ -5,6 +5,12 @@
 #include <cmath>
 
 namespace Math {
+    struct Vector2 {
+        double x = 0.00;
+        double y = 0.00;
+    };
+    
+
     template<typename T> T floor(T num) {
         return std::floor(num);
     }
@@ -13,7 +19,7 @@ namespace Math {
         return std::ceil(num);
     }
 
-        template<typename T> double tax(T numToTax) {
+    template<typename T> double tax(T numToTax) {
         int b1n1 = 250000;
         int b1n2 = 500000;
         int b2n2 = 750000;
